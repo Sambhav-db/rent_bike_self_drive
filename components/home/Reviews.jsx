@@ -9,8 +9,18 @@ import SectionHeading from "../common/SectionHeading";
 import { testimonials } from "@/data/testimonials";
 
 import { Star } from "lucide-react";
+import Image from "next/image";
 
 export default function Reviews() {
+
+  const GoogleLogo = () => (
+  <img
+    src="https://www.google.com/favicon.ico"
+    alt="Google"
+    className="w-5 h-5"
+  />
+);
+
   return (
     <section className="bg-gray-50">
 
@@ -43,28 +53,52 @@ export default function Reviews() {
           {testimonials.map((item, i) => (
             <SwiperSlide key={i}>
 
-              <div className="bg-white rounded-[30px] p-8 border border-gray-100 card-shadow mb-14">
+              <div className="bg-white rounded-3xl p-7 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 mb-14 h-full">
 
-                <div className="flex gap-1 mb-5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      size={18}
-                      fill="#ff7a00"
-                      color="#ff7a00"
-                    />
-                  ))}
-                </div>
+  <div className="flex items-center justify-between mb-5">
 
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {item.review}
-                </p>
+    <div className="flex items-center gap-4">
 
-                <h4 className="font-bold text-lg">
-                  {item.name}
-                </h4>
+      <Image
+        src={item.image}
+        alt={item.name}
+        width={56}
+        height={56}
+        className="rounded-full object-cover border-2 border-orange-100"
+      />
 
-              </div>
+      <div>
+        <h4 className="font-bold text-gray-900">
+          {item.name}
+        </h4>
+
+        <p className="text-sm text-gray-500">
+          Verified Customer
+        </p>
+      </div>
+
+    </div>
+
+    <GoogleLogo />
+
+  </div>
+
+  <div className="flex gap-1 mb-4">
+    {[...Array(5)].map((_, i) => (
+      <Star
+        key={i}
+        size={16}
+        fill="#ff7a00"
+        color="#ff7a00"
+      />
+    ))}
+  </div>
+
+  <p className="text-gray-600 leading-relaxed">
+    "{item.review}"
+  </p>
+
+</div>
 
             </SwiperSlide>
           ))}

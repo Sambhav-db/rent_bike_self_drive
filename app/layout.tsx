@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Bike Rental In Ujjain | Scooty & Self Drive Car Rental",
+  title: "RENT BIKE SELF DRIVE | Bike, Scooty & Self Drive Car Rental In Ujjain",
   
   description:
     "Affordable bike, scooty, and self-drive car rental service in Ujjain for Mahakal Darshan, Omkareshwar, and local travel.",
@@ -31,11 +31,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RentBike Ujjain",
     description: "Premium bike and scooty rental service in Ujjain.",
-    images: ["/bikes/hero-bike.png"],
+    images: [
+      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
+    ],
   },
 
   icons: {
-    icon: "/favicon.ico",
+    icon: "/rentbikeselfdrive.ico",
   },
 };
 
@@ -49,7 +51,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     
     name: "RentBike Ujjain",
-    image: "/logo/logo.png",
+    image: "/logo/main-logo.png",
     
     address: {
       "@type": "PostalAddress",
@@ -65,7 +67,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`inter.variable{inter.variable}inter.variable{montserrat.variable}`}>
+      <body  className={`${inter.variable} ${montserrat.variable}`}>
         {children}
         <script
           type="application/ld+json"

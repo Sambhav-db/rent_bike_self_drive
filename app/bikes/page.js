@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -26,7 +27,7 @@ export default function BikesPage() {
     <>
       <Header />
 
-      <section className="pt-24">
+      <section className="pt-24 md:pt-64">
 
         <Container>
 
@@ -41,7 +42,7 @@ export default function BikesPage() {
               <button
                 key={tab}
                 onClick={() => setActive(tab)}
-                className={`px-5 py-3 rounded-full whitespace-nowrap transition text-sm font-medium ${
+                className={`px-5 py-3 rounded-full whitespace-nowrap transition duration-300 ease-in-out text-sm font-medium ${
                   active === tab
                     ? "bg-orange-500 text-white"
                     : "bg-gray-100"
@@ -53,15 +54,21 @@ export default function BikesPage() {
 
           </div>
 
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
-
-            {filtered.map((bike) => (
-              <BikeCard
-                key={bike.id}
-                bike={bike}
-              />
-            ))}
-
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-7">
+            <AnimatePresence mode="popLayout">
+              {filtered.map((bike) => (
+                <motion.div
+                  key={bike.id}
+                  layout
+                  initial={{ opacity: 0, y: 20, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -20, scale: 0.98 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <BikeCard key={bike.id} bike={bike} />
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
 
         </Container>

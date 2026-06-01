@@ -22,7 +22,7 @@ export default function FAQ() {
           title="Frequently Asked Questions"
         />
 
-        <div className="space-y-5">
+        <div className="space-y-6">
 
           {faq.map((item, i) => (
             <div
@@ -34,7 +34,7 @@ export default function FAQ() {
                 onClick={() =>
                   setActive(active === i ? null : i)
                 }
-                className="w-full flex items-center justify-between p-5 md:p-7 text-left"
+                className="w-full flex items-center justify-between p-6 md:p-7 text-left"
               >
 
                 <span className="font-semibold text-base md:text-lg">
@@ -57,7 +57,7 @@ export default function FAQ() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="px-5 md:px-7 pb-6 text-gray-600 leading-relaxed">
+                  <p className="px-6 md:px-8 pb-7 text-gray-600 leading-relaxed">
                     {item.answer}
                   </p>
                 </div>

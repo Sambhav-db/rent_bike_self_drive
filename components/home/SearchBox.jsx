@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { CalendarDays, Bike } from "lucide-react";
 
@@ -8,28 +8,28 @@ export default function SearchBox() {
 
       <div className="grid gap-4">
 
-        <div className="border rounded-2xl px-4 py-3 flex items-center gap-3">
+        <div className="border rounded-2xl px-4 py-3 flex items-center gap-3 bg-white/90">
           <CalendarDays className="text-orange-500" size={20} />
 
           <input
             type="date"
-            className="w-full outline-none bg-transparent text-sm"
+            className="w-full outline-none bg-transparent text-sm px-3 py-2 rounded-xl"
           />
         </div>
 
-        <div className="border rounded-2xl px-4 py-3 flex items-center gap-3">
+        <div className="border rounded-2xl px-4 py-3 flex items-center gap-3 bg-white/90">
           <CalendarDays className="text-orange-500" size={20} />
 
           <input
             type="date"
-            className="w-full outline-none bg-transparent text-sm"
+            className="w-full outline-none bg-transparent text-sm px-3 py-2 rounded-xl"
           />
         </div>
 
-        <div className="border rounded-2xl px-4 py-3 flex items-center gap-3">
+        <div className="border rounded-2xl px-4 py-3 flex items-center gap-3 bg-white/90">
           <Bike className="text-orange-500" size={20} />
 
-          <select className="w-full outline-none bg-transparent text-sm">
+          <select className="w-full outline-none bg-transparent text-sm px-3 py-2 rounded-xl">
             <option>Select Vehicle Type</option>
             <option>Scooty</option>
             <option>Bike</option>

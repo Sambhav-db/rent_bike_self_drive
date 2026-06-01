@@ -7,8 +7,8 @@ export default function Loader() {
     <div className="fixed inset-0 bg-white z-[999] flex items-center justify-center">
 
       <motion.img
-        src="/logo/logo.png"
-        alt=""
+        src="/logo/main-logo.png"
+        alt="RentBike Ujjain"
         className="w-28"
         animate={{
           scale: [1, 1.1, 1],

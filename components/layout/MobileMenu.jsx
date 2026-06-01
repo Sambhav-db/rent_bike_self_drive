@@ -7,9 +7,9 @@ import { X } from "lucide-react";
 export default function MobileMenu({ open, setOpen }) {
   const links = [
     { name: "Home", href: "/" },
-    { name: "Bikes", href: "/bikes" },
     { name: "About", href: "/about" },
-    { name: "Blogs", href: "/blogs" },
+    { name: "Bikes", href: "/bikes" },
+    { name: "Explore", href: "/explore" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -30,7 +30,21 @@ export default function MobileMenu({ open, setOpen }) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.35 }}
-            className="fixed top-0 right-0 w-[85%] max-w-sm h-screen bg-white z-50 shadow-2xl p-6"
+            className="
+fixed
+top-0
+right-0
+w-[90%]
+max-w-sm
+h-screen
+bg-white/80
+backdrop-blur-3xl
+border-l
+border-white/20
+z-50
+shadow-[0_0_60px_rgba(0,0,0,0.15)]
+p-6
+"
           >
             <div className="flex items-center justify-between mb-10">
               <h2 className="text-2xl font-bold">
@@ -53,7 +67,17 @@ export default function MobileMenu({ open, setOpen }) {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="text-lg font-medium"
+                    className="
+    flex items-center
+    px-5 py-4
+    rounded-2xl
+    bg-white/50
+    backdrop-blur
+    hover:bg-orange-500
+    hover:text-white
+    transition-all
+    font-medium
+  "
                   >
                     {link.name}
                   </Link>
@@ -62,10 +86,7 @@ export default function MobileMenu({ open, setOpen }) {
             </div>
 
             <div className="mt-10 flex flex-col gap-4">
-              <a
-                href="tel:+919999999999"
-                className="secondary-btn text-center"
-              >
+              <a href="tel:+919999999999" className="secondary-btn text-center">
                 Call Now
               </a>
 

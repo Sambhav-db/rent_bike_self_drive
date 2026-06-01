@@ -1,22 +1,113 @@
 export const routes = [
   {
-    title: "Mahakal Local Ride",
-    price: "₹500/day",
-    image:
-      "https://images.unsplash.com/photo-1599661046827-dacde6976549?q=80&w=1200&auto=format&fit=crop",
+    slug: "mahakal-temple",
+    title: "Mahakal Temple",
+    shortTitle: "Mahakal",
+    category: "Spiritual Destination",
+    image: "/routes/mahakal.webp",
+    distance: "2 km",
+    duration: "2-3 Hours",
+    bestFor: "Darshan & Spiritual Visit",
+    description:
+      "Experience the divine aura of Mahakaleshwar Jyotirlinga in Ujjain. Witness the sacred Bhasma Aarti, explore the magnificent Mahakal Lok Corridor, and immerse yourself in centuries-old spiritual traditions.",
+    highlights: [
+      "Mahakal Lok Corridor",
+      "Bhasma Aarti",
+      "Jyotirlinga Darshan",
+      "Temple Complex",
+      "Spiritual Atmosphere",
+    ],
+    seoTitle: "Mahakal Temple Ujjain Travel Guide – Visit Mahakaleshwar",
+    seoDescription:
+      "Plan your visit to Mahakaleshwar Jyotirlinga in Ujjain. Discover timings, rituals, and spiritual highlights for an unforgettable experience.",
   },
-
   {
-    title: "Bagalamukhi Trip",
-    price: "₹850",
-    image:
-      "https://images.unsplash.com/photo-1517846693594-1567da72af75?q=80&w=1200&auto=format&fit=crop",
+    slug: "ujjain-darshan",
+    title: "Ujjain Darshan",
+    shortTitle: "Ujjain Darshan",
+    category: "City Sightseeing",
+    image: "/routes/ujjain-darshan.webp",
+    distance: "Local Tour",
+    duration: "1 Day",
+    bestFor: "Tourists & Pilgrims",
+    description:
+      "Explore the spiritual and cultural heart of Ujjain with our guided city darshan. Visit iconic spots like Mahakal, Ram Ghat, Kal Bhairav, Harsiddhi Mata, Mangalnath, and experience the rich heritage of this holy city.",
+    highlights: [
+      "Mahakaleshwar Temple",
+      "Ram Ghat & Kshipra River",
+      "Kal Bhairav Temple",
+      "Harsiddhi Mata Temple",
+      "Mangalnath Temple",
+      "City Heritage Walk",
+    ],
+    seoTitle: "Ujjain Darshan Guide – Explore Famous Temples & Heritage",
+    seoDescription:
+      "Discover Ujjain's top spiritual and cultural destinations. Plan your city tour with detailed guides to temples, ghats, and historic landmarks.",
   },
-
   {
-    title: "Omkareshwar Ride",
-    price: "₹950",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+    slug: "omkareshwar-trip",
+    title: "Omkareshwar Trip",
+    shortTitle: "Omkareshwar",
+    category: "Road Trip",
+    image: "/routes/omkareshwar.webp",
+    distance: "80 km",
+    duration: "Full Day",
+    bestFor: "Spiritual Road Trip",
+    description:
+      "Embark on a scenic road trip to Omkareshwar, one of the 12 Jyotirlinga sites in India. Enjoy breathtaking riverside views, spiritual vibes, and the serene Omkareshwar island temples.",
+    highlights: [
+      "Omkareshwar Jyotirlinga",
+      "Narmada River Views",
+      "Island Temple Complex",
+      "Scenic Road Trip",
+      "Spiritual Ambiance",
+    ],
+    seoTitle: "Omkareshwar Trip from Ujjain – Road Trip & Spiritual Guide",
+    seoDescription:
+      "Plan a memorable Omkareshwar trip from Ujjain. Explore sacred temples, scenic drives, and spiritual experiences on this one-day road journey.",
+  },
+  {
+    slug: "baglamukhi-trip",
+    title: "Baglamukhi Temple",
+    shortTitle: "Baglamukhi",
+    category: "Temple Visit",
+    image: "/routes/baglamukhi.webp",
+    distance: "65 km",
+    duration: "Half Day",
+    bestFor: "Religious Visit",
+    description:
+      "Visit the divine Baglamukhi Mata Temple, known for its spiritual energy and sacred rituals. Perfect for pilgrims seeking blessings and a peaceful temple visit close to Ujjain.",
+    highlights: [
+      "Baglamukhi Mata Temple",
+      "Sacred Rituals",
+      "Spiritual Blessings",
+      "Peaceful Environment",
+      "Half-Day Pilgrimage",
+    ],
+    seoTitle: "Baglamukhi Temple Ujjain – Pilgrimage & Spiritual Visit",
+    seoDescription:
+      "Explore Baglamukhi Mata Temple near Ujjain. Learn about rituals, timings, and the spiritual significance of this revered destination.",
+  },
+  {
+    slug: "maheshwar-trip",
+    title: "Maheshwar Trip",
+    shortTitle: "Maheshwar",
+    category: "Heritage Destination",
+    image: "/routes/maheshwar.webp",
+    distance: "140 km",
+    duration: "Full Day",
+    bestFor: "Weekend Getaway",
+    description:
+      "Discover the royal heritage of Maheshwar on the banks of the Narmada River. Explore Maheshwar Fort, historic ghats, handloom weaving centers, and enjoy a blend of culture, history, and scenic beauty.",
+    highlights: [
+      "Maheshwar Fort",
+      "Narmada River Ghats",
+      "Handloom Weaving Villages",
+      "Cultural Heritage",
+      "Weekend Getaway Spot",
+    ],
+    seoTitle: "Maheshwar Trip from Ujjain – Heritage & Cultural Guide",
+    seoDescription:
+      "Plan a heritage trip to Maheshwar from Ujjain. Visit forts, ghats, and weaving villages while experiencing the cultural richness of Madhya Pradesh.",
   },
 ];
