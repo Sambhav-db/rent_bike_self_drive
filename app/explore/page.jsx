@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { routes } from "@/data/routes";
 import { ArrowRight, MapPin } from "lucide-react";
+import Image from "next/image";
 
 export default function ExplorePage() {
   return (
@@ -17,7 +18,7 @@ export default function ExplorePage() {
           <SectionHeading
             subtitle="Explore"
             title="Explore Ujjain & Nearby Destinations"
-          /> 
+          />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             {routes.map((route) => (
@@ -26,12 +27,16 @@ export default function ExplorePage() {
                 href={`/explore/${route.slug}`}
                 className="group bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition duration-300"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={route.image}
-                    alt={route.title}
-                    className="w-full h-[260px] object-cover group-hover:scale-110 transition duration-700"
-                  />
+                <div className="relative overflow-hidden">
+                  <div className="relative w-full h-[260px]">
+                    <Image
+                      src={route.image}
+                      alt={route.title}
+                      fill
+                      className="object-cover transition duration-700 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
                 </div>
 
                 <div className="p-6">
@@ -40,9 +45,7 @@ export default function ExplorePage() {
                     {route.distance}
                   </div>
 
-                  <h3 className="text-2xl font-bold mb-3">
-                    {route.title}
-                  </h3>
+                  <h3 className="text-2xl font-bold mb-3">{route.title}</h3>
 
                   <p className="text-gray-600 leading-relaxed line-clamp-3">
                     {route.description}

@@ -38,14 +38,14 @@ export default function Footer() {
               <Link href="/" className="hover:text-orange-500 transition">
                 Home
               </Link>
-              <Link href="/bikes" className="hover:text-orange-500 transition">
-                Bikes
-              </Link>
               <Link href="/about" className="hover:text-orange-500 transition">
                 About
               </Link>
-              <Link href="/contact" className="hover:text-orange-500 transition">
-                Contact
+              <Link href="/bikes" className="hover:text-orange-500 transition">
+                Bikes
+              </Link>
+              <Link href="/explore" className="hover:text-orange-500 transition">
+                Explore
               </Link>
             </div>
           </div>

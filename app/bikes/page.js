@@ -12,6 +12,7 @@ import SectionHeading from "@/components/common/SectionHeading";
 import BikeCard from "@/components/bikes/BikeCard";
 
 import { bikes } from "@/data/bikes";
+import { Divide } from "lucide-react";
 
 export default function BikesPage() {
   const tabs = ["All", "Scooty", "Bike", "Premium", "Car"];
@@ -27,7 +28,7 @@ export default function BikesPage() {
     <>
       <Header />
 
-      <section className="pt-24 md:pt-64">
+      <div className="pt-24 md:pt-28">
 
         <Container>
 
@@ -73,7 +74,7 @@ export default function BikesPage() {
 
         </Container>
 
-      </section>
+      </div>
 
       <Footer />
     </>

@@ -11,7 +11,6 @@ import {
   Star,
   ShieldCheck,
   BadgeIndianRupee,
-  Zap,
   ZapIcon,
 } from "lucide-react";
 

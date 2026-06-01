@@ -8,6 +8,7 @@ import Container from "@/components/common/Container";
 import { routes } from "@/data/routes";
 
 import { MapPin, Clock3, Route, ArrowRight, Star } from "lucide-react";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return routes.map((route) => ({
@@ -35,10 +36,7 @@ export default async function DestinationPage({ params }) {
       {/* HERO */}
       <section className="relative h-[80vh] min-h-[650px] overflow-hidden">
         <img
-          src={
-            route.image ||
-            "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
-          }
+          src={route.image}
           alt={route.title}
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -108,10 +106,12 @@ export default async function DestinationPage({ params }) {
             </div>
 
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-[36px]">
-              <img
-                src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop"
+              <Image
+                src={route.image}
                 alt={route.title}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>
@@ -176,11 +176,15 @@ export default async function DestinationPage({ params }) {
                 href={`/explore/${item.slug}`}
                 className="group rounded-[30px] overflow-hidden bg-white shadow-sm hover:shadow-xl transition"
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-64 w-full object-cover group-hover:scale-105 transition duration-700"
-                />
+                <div className="relative w-full h-64 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover object-center group-hover:scale-105 transition duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
 
                 <div className="p-6">
                   <h3 className="text-xl font-bold">{item.title}</h3>
