@@ -12,7 +12,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 export default function FeaturedBikes() {
-  const tabs = ["All", "Scooty", "Bike", "Premium", "Car"];
+  const tabs = ["All", "Scooty", "Bike", "Car", "Premium"];
 
   const [active, setActive] = useState("All");
 

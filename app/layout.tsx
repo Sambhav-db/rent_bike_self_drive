@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Inter, Montserrat } from "next/font/google";
+import PageLoader from "@/components/common/PageLoader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     title: "RentBike Ujjain",
     description: "Premium bike and scooty rental service in Ujjain.",
     images: [
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
+      "/logo/main-logo.png",
     ],
   },
 
@@ -68,7 +69,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className={`${inter.variable} ${montserrat.variable}`}>
-        {children}
+        <PageLoader>
+    {children}
+  </PageLoader>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

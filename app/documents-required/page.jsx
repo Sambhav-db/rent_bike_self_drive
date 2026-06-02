@@ -35,7 +35,7 @@ export default function DocumentsPage() {
     <>
       <Header />
 
-      <section className="pt-24">
+      <div className="pt-24 md:pt-32 pb-16">
 
         <Container>
 
@@ -75,7 +75,7 @@ export default function DocumentsPage() {
 
         </Container>
 
-      </section>
+      </div>
 
       <Footer />
     </>

@@ -35,17 +35,17 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-5">Quick Links</h3>
 
             <div className="flex flex-col gap-3 text-gray-400">
-              <Link href="/" className="hover:text-orange-500 transition">
-                Home
-              </Link>
-              <Link href="/about" className="hover:text-orange-500 transition">
-                About
-              </Link>
               <Link href="/bikes" className="hover:text-orange-500 transition">
-                Bikes
+                Vehicles
               </Link>
               <Link href="/explore" className="hover:text-orange-500 transition">
-                Explore
+                Destinations
+              </Link>
+              <Link href="/documents-required" className="hover:text-orange-500 transition">
+                Documents Required
+              </Link>
+              <Link href="/terms-conditions" className="hover:text-orange-500 transition">
+                Terms & Conditions
               </Link>
             </div>
           </div>

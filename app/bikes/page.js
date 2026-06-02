@@ -15,7 +15,7 @@ import { bikes } from "@/data/bikes";
 import { Divide } from "lucide-react";
 
 export default function BikesPage() {
-  const tabs = ["All", "Scooty", "Bike", "Premium", "Car"];
+  const tabs = ["All", "Scooty", "Bike", "Car", "Premium"];
 
   const [active, setActive] = useState("All");
 
