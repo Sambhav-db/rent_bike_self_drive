@@ -51,7 +51,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     
-    name: "RentBike Ujjain",
+    name: "RentBikeSelfDrive Ujjain",
     image: "/logo/main-logo.png",
     
     address: {

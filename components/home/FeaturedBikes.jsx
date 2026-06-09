@@ -12,7 +12,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 export default function FeaturedBikes() {
-  const tabs = ["All", "Scooty", "Bike", "Car", "Premium"];
+  const tabs = ["All", "Scooty", "Bike", "Electric", "Car"];
 
   const [active, setActive] = useState("All");
 
@@ -34,9 +34,19 @@ export default function FeaturedBikes() {
             <button
               key={tab}
               onClick={() => setActive(tab)}
-              className={`px-5 py-3 rounded-full whitespace-nowrap transition duration-300 ease-in-out text-sm font-medium ${
-                active === tab ? "bg-orange-500 text-white" : "bg-gray-100"
-              }`}
+              className={`
+        shrink-0
+        px-5 py-3
+        rounded-full
+        text-sm font-medium
+        transition-all duration-300
+        
+        ${
+          active === tab
+            ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25"
+            : "bg-white border border-gray-200 text-gray-700 hover:border-orange-300"
+        }
+      `}
             >
               {tab}
             </button>
@@ -67,7 +77,9 @@ export default function FeaturedBikes() {
               className="inline-flex items-center gap-2 px-7 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
             >
               View All Vehicles
-              <span><ChevronRight size={18} /></span>
+              <span>
+                <ChevronRight size={18} />
+              </span>
             </Link>
           </div>
         )}

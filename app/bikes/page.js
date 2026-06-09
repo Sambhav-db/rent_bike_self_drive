@@ -15,44 +15,46 @@ import { bikes } from "@/data/bikes";
 import { Divide } from "lucide-react";
 
 export default function BikesPage() {
-  const tabs = ["All", "Scooty", "Bike", "Car", "Premium"];
+  const tabs = ["All", "Scooty", "Bike", "Electric", "Car"];
 
   const [active, setActive] = useState("All");
 
   const filtered =
-    active === "All"
-      ? bikes
-      : bikes.filter((bike) => bike.category === active);
+    active === "All" ? bikes : bikes.filter((bike) => bike.category === active);
 
   return (
     <>
       <Header />
 
       <div className="pt-24 md:pt-28">
-
         <Container>
-
           <SectionHeading
             subtitle="Our Fleet"
             title="Explore Our Rental Vehicles"
           />
 
-          <div className="flex gap-3 overflow-x-auto pb-5 mb-10 scrollbar-hide">
-
+          <div className="flex gap-3 overflow-x-auto pb-4 mb-10 scrollbar-hide">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActive(tab)}
-                className={`px-5 py-3 rounded-full whitespace-nowrap transition duration-300 ease-in-out text-sm font-medium ${
-                  active === tab
-                    ? "bg-orange-500 text-white"
-                    : "bg-gray-100"
-                }`}
+                className={`
+        shrink-0
+        px-5 py-3
+        rounded-full
+        text-sm font-medium
+        transition-all duration-300
+        
+        ${
+          active === tab
+            ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25"
+            : "bg-white border border-gray-200 text-gray-700 hover:border-orange-300"
+        }
+      `}
               >
                 {tab}
               </button>
             ))}
-
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-7">
@@ -71,9 +73,7 @@ export default function BikesPage() {
               ))}
             </AnimatePresence>
           </div>
-
         </Container>
-
       </div>
 
       <Footer />
