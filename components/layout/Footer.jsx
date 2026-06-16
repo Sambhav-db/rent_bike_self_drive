@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <Image
-                src="/logo/footer-logo.png"
+                src="/logo/updateLogo.png"
                 alt="RentBike Ujjain"
                 width={200}
                 height={52}
@@ -74,23 +74,35 @@ export default function Footer() {
 
           <div>
             <h3 className="text-xl font-semibold mb-5">Contact</h3>
+ 
 
-            <div className="flex flex-col gap-3 text-gray-400">
-              <div className="flex items-center gap-3 hover:text-orange-500 transition">
-                <MapPin size={18} className="text-orange-500" />
-                <p>Ujjain, Madhya Pradesh</p>
-              </div>
+<div className="flex flex-col gap-3 text-gray-400">
+  <a
+    href="https://maps.app.goo.gl/pkKBfw8UVYAapAVm9"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-start gap-3 hover:text-orange-500 transition duration-300"
+  >
+    <MapPin size={18} className="text-orange-500 flex-shrink-0 mt-2" />
+    <span>near Radha Krishna Temple, Awantipura, Abdalpura, Kajipura, Ujjain, Madhya Pradesh 456006</span>
+  </a>
 
-              <div className="flex items-center gap-3 hover:text-orange-500 transition">
-                <Phone size={18} className="text-orange-500" />
-                <p>+91 9999999999</p>
-              </div>
+  <a
+    href="tel:+919644991724"
+    className="flex items-center gap-3 hover:text-orange-500 transition duration-300"
+  >
+    <Phone size={18} className="text-orange-500 flex-shrink-0" />
+    <span>+91 91 96449 91724</span>
+  </a>
 
-              <div className="flex items-center gap-3 hover:text-orange-500 transition">
-                <Mail size={18} className="text-orange-500" />
-                <p>info@rentbikeujjain.com</p>
-              </div>
-            </div>
+  <a
+    href="mailto:rentbikeselfdrive@gmail.com"
+    className="flex items-center gap-3 hover:text-orange-500 transition duration-300 break-all"
+  >
+    <Mail size={18} className="text-orange-500 flex-shrink-0" />
+    <span>rentbikeselfdrive@gmail.com</span>
+  </a>
+</div>
           </div>
         </div>
 

@@ -20,7 +20,9 @@ export default function CTA() {
           </p>
 
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919644991724"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex bg-white text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition relative z-10"
           >
             Book On WhatsApp

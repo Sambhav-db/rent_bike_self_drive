@@ -118,6 +118,40 @@ export default async function DestinationPage({ params }) {
         </Container>
       </div>
 
+{route.aartiTimings && (
+  <Container>
+    <div className="mt-12 mb-16">
+      <div className="flex items-center gap-3 mb-6">
+        <div className="h-8 w-1 rounded-full bg-orange-500" />
+        <h2 className="text-2xl font-bold">
+          Mahakal Aarti Timings
+        </h2>
+      </div>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        {route.aartiTimings.map((aarti, index) => (
+          <div
+            key={index}
+            className="bg-white border border-gray-100 rounded-[24px] p-5 shadow-sm hover:shadow-lg transition-all duration-300"
+          >
+            <p className="text-xs uppercase tracking-wider text-orange-500 font-semibold">
+              Aarti
+            </p>
+
+            <h3 className="mt-2 font-bold text-gray-900 leading-tight">
+              {aarti.name}
+            </h3>
+
+            <p className="mt-3 text-sm text-gray-500">
+              {aarti.time}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </Container>
+)}
+
       {/* HIGHLIGHTS */}
       <section className="py-24 bg-gray-50">
         <Container>

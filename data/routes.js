@@ -8,6 +8,28 @@ export const routes = [
     distance: "2 km",
     duration: "2-3 Hours",
     bestFor: "Darshan & Spiritual Visit",
+    aartiTimings: [
+      {
+        name: "Bhasma Aarti",
+        time: "4:00 AM - 6:00 AM",
+      },
+      {
+        name: "Kaleva Aarti",
+        time: "7:30 AM - 8:00 AM",
+      },
+      {
+        name: "Naivedya Aarti",
+        time: "10:30 AM - 11:00 AM",
+      },
+      {
+        name: "Sandhya Aarti",
+        time: "6:30 PM - 7:00 PM",
+      },
+      {
+        name: "Shayan Aarti",
+        time: "10:30 PM - 11:00 PM",
+      },
+    ],
     description:
       "Experience the divine aura of Mahakaleshwar Jyotirlinga in Ujjain. Witness the sacred Bhasma Aarti, explore the magnificent Mahakal Lok Corridor, and immerse yourself in centuries-old spiritual traditions.",
     highlights: [

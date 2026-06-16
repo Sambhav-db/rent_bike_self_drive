@@ -48,7 +48,7 @@ p-6
           >
             <div className="flex items-center justify-between mb-10">
               <h2 className="text-2xl font-bold">
-                RentBike <span className="text-orange-500">Ujjain</span>
+                Rent Bike Self Drive <span className="text-orange-500"></span>
               </h2>
 
               <button onClick={() => setOpen(false)}>
@@ -86,12 +86,14 @@ p-6
             </div>
 
             <div className="mt-10 flex flex-col gap-4">
-              <a href="tel:+919999999999" className="secondary-btn text-center">
+              <a href="tel:+919644991724" className="secondary-btn text-center">
                 Call Now
               </a>
 
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919644991724"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="primary-btn text-center"
               >
                 WhatsApp

@@ -65,7 +65,9 @@ export default function BikeCard({ bike }) {
 
             <div className="grid grid-cols-2 gap-3">
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919644991724"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="primary-btn text-center text-sm"
               >
                 Book Now

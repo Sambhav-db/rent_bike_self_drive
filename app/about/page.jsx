@@ -6,18 +6,28 @@ import AboutCTASection from "./AboutCTASection";
 
 export const metadata = {
   title:
-    "About RentBike Ujjain | Bike & Scooty Rental Service In Ujjain",
+    "About Rent Bike Self Drive Ujjain | Bike, Scooty & Car Rental Service",
 
   description:
-    "Learn about RentBike Ujjain, a trusted provider of bike, scooty and self-drive vehicle rentals for Mahakal Darshan, Omkareshwar trips and local sightseeing.",
+    "Rent Bike Self Drive is a trusted bike, scooty and self-drive car rental service in Ujjain. Affordable rentals for Mahakal Darshan, Omkareshwar, Baglamukhi Temple and local sightseeing with pickup and drop facility.",
 
   keywords: [
-    "Bike Rental Ujjain",
-    "Scooty Rental Ujjain",
-    "Mahakal Bike Rental",
-    "Self Drive Bike Ujjain",
-    "Omkareshwar Bike Rental",
+    "bike rental ujjain",
+    "scooty rental ujjain",
+    "self drive car rental ujjain",
+    "rent bike self drive ujjain",
+    "mahakal bike rental",
+    "bike on rent near mahakal",
+    "scooty on rent in ujjain",
+    "omkareshwar bike rental",
+    "baglamukhi temple bike rental",
+    "ujjain bike hire",
+    "activa on rent ujjain",
+    "car rental ujjain",
+    "tourist bike rental ujjain",
   ],
+ 
+
 };
 
 export default function AboutPage() {

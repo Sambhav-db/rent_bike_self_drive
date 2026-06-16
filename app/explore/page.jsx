@@ -8,6 +8,37 @@ import { routes } from "@/data/routes";
 import { ArrowRight, MapPin } from "lucide-react";
 import Image from "next/image";
 
+export const metadata = {
+  title:
+    "Explore Ujjain, Mahakal, Omkareshwar & Nearby Places | Rent Bike Self Drive",
+
+  description:
+    "Discover the best places to visit in Ujjain including Mahakaleshwar Temple, Kal Bhairav, Ram Ghat, Mangalnath, Omkareshwar, Maheshwar and Baglamukhi Temple. Plan your trip with bike, scooty and self-drive car rentals in Ujjain.",
+
+  keywords: [
+    "places to visit in ujjain",
+    "ujjain tourist places",
+    "mahakal darshan ujjain",
+    "mahakaleshwar temple ujjain",
+    "omkareshwar trip from ujjain",
+    "baglamukhi temple ujjain",
+    "maheshwar sightseeing",
+    "kal bhairav temple ujjain",
+    "ram ghat ujjain",
+    "mangalnath temple ujjain",
+    "ujjain travel guide",
+    "ujjain local sightseeing",
+    "tourist attractions in ujjain",
+    "bike rental for mahakal darshan",
+    "scooty rental in ujjain",
+    "self drive car rental ujjain",
+    "ujjain road trips",
+    "explore ujjain by bike",
+    "omkareshwar bike trip",
+    "rent bike self drive ujjain",
+  ],
+};
+
 export default function ExplorePage() {
   return (
     <>

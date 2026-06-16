@@ -16,7 +16,7 @@ export default function AboutCTASection() {
           </p>
 
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919644991724"
             target="_blank"
             rel="noreferrer"
             className="inline-flex mt-8 px-8 py-4 rounded-full bg-white text-orange-600 font-semibold"

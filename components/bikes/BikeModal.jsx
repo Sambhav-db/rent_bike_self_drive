@@ -123,14 +123,16 @@ export default function BikeModal({ bike, open, setOpen }) {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
-                      href="https://wa.me/919999999999"
+                      href="https://wa.me/919644991724"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="primary-btn text-center flex-1"
                     >
                       Book On WhatsApp
                     </a>
 
                     <a
-                      href="tel:+919999999999"
+                      href="tel:+919644991724"
                       className="secondary-btn text-center flex-1"
                     >
                       Call Now

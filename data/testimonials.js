@@ -1,50 +1,47 @@
 export const testimonials = [
   {
-    name: "Rahul Sharma",
-    image: "https://i.pravatar.cc/150?img=11",
+    name: "Pratik Dengane",
     review:
-      "Best bike rental service in Ujjain. Smooth booking process and the scooty was in excellent condition.",
+      "I rented an Activa for a full day. The owner even extended an extra hour on request. The vehicle was in excellent condition and pickup/drop service was provided free of cost.",
   },
   {
-    name: "Ankit Verma",
-    image: "https://i.pravatar.cc/150?img=12",
+    name: "Rahul Mehandiratta",
     review:
-      "Very affordable pricing and quick delivery. My Mahakal darshan trip became hassle-free.",
+      "Great service! Convenient pickup and delivery right at your location. I'll definitely choose them again for future bike rentals.",
   },
   {
-    name: "Priya Singh",
-    image: "https://i.pravatar.cc/150?img=32",
+    name: "Pavan Sharma",
     review:
-      "Professional service and well-maintained vehicles. Highly recommended for tourists visiting Ujjain.",
+      "Best bike rental service in Ujjain. Yash bhaiya is very supportive and helpful. I highly recommend taking a bike on rent from him.",
   },
   {
-    name: "Rohit Jain",
-    image: "https://i.pravatar.cc/150?img=15",
+    name: "Bhuvneshwar Choudhary",
     review:
-      "The owner was very polite and supportive. Perfect experience for my Omkareshwar road trip.",
+      "Best bike rental service in Ujjain. Bikes are well maintained, in excellent condition, and the overall service is outstanding.",
   },
   {
-    name: "Neha Patel",
-    image: "https://i.pravatar.cc/150?img=5",
+    name: "Himanshu Kesharwani",
     review:
-      "Clean scooty, transparent pricing, and no hidden charges. Would definitely rent again.",
+      "Bikes are in good condition and pricing is reasonable. Yash bhaiya is very cooperative. Highly recommended.",
   },
   {
-    name: "Vikram Chauhan",
-    image: "https://i.pravatar.cc/150?img=18",
+    name: "Rohit Minocha",
     review:
-      "Booking was simple and the vehicle was delivered on time. Great service overall.",
+      "The bike was in excellent condition and the owner was very polite. I came from Rishikesh and had a great rental experience in Ujjain.",
   },
   {
-    name: "Sneha Gupta",
-    image: "https://i.pravatar.cc/150?img=25",
+    name: "Vijendra Shetty",
     review:
-      "Amazing experience. The bike condition was excellent and customer support was very responsive.",
+      "Booked a scooty for local sightseeing in Ujjain. Pickup and drop service from the hotel was available. Honest and professional service.",
   },
   {
-    name: "Amit Joshi",
-    image: "https://i.pravatar.cc/150?img=53",
+    name: "Satyanarayan Jena",
     review:
-      "One of the best rental services in Ujjain. Affordable, reliable, and convenient.",
+      "Amazing experience. The scooty was clean, comfortable, and well maintained. The owner was friendly, professional, and helpful.",
+  },
+  {
+    name: "Mayur Bhosale",
+    review:
+      "We rented a scooty for a couple of days. Excellent service and hassle-free experience. Highly recommended.",
   },
 ];

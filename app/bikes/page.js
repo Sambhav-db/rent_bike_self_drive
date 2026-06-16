@@ -14,6 +14,7 @@ import BikeCard from "@/components/bikes/BikeCard";
 import { bikes } from "@/data/bikes";
 import { Divide } from "lucide-react";
 
+
 export default function BikesPage() {
   const tabs = ["All", "Scooty", "Bike", "Electric", "Car"];
 

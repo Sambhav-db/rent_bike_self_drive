@@ -24,7 +24,7 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },    
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Bikes", href: "/bikes" },
     { name: "Explore", href: "/explore" },
@@ -59,7 +59,7 @@ export default function Header() {
           >
             <Link href="/" className="p-5 flex items-center">
               <img
-                src="/logo/header-logo.png"
+                src="/logo/updateLogo.png"
                 alt="Rent Bike Ujjain"
                 width={200}
                 height={52}
@@ -100,7 +100,7 @@ export default function Header() {
 
             <div className="hidden lg:flex items-center gap-3 pr-3">
               <a
-                href="tel:+91xxxxxxxxxx"
+                href="tel:+919644991724"
                 className="
       px-5 py-2.5
       rounded-full
@@ -115,7 +115,9 @@ export default function Header() {
               </a>
 
               <a
-                href="https://wa.me/91xxxxxxxxxx"
+                href="https://wa.me/919644991724"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
       px-5 py-2.5
       rounded-full

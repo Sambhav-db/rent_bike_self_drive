@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "RentBike Ujjain",
     description: "Premium bike and scooty rental service in Ujjain.",
     images: [
-      "/logo/main-logo.png",
+      "/logo/updateLogo.png",
     ],
   },
 
@@ -52,7 +52,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     
     name: "RentBikeSelfDrive Ujjain",
-    image: "/logo/main-logo.png",
+    image: "/logo/updateLogo.png",
     
     address: {
       "@type": "PostalAddress",
@@ -61,8 +61,8 @@ export default function RootLayout({
       addressCountry: "India",
     },
     
-    telephone: "+91XXXXXXXXXX",
-    priceRange: "₹399 - ₹2500",
+    telephone: "+919644991724",
+    priceRange: "₹399 - 5000",
     areaServed: ["Ujjain", "Mahakal", "Omkareshwar"],
   };
 
